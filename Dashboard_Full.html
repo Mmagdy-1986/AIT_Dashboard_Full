@@ -611,7 +611,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);disp
   <iframe id="mines-iframe" src="egypt_mines_map.html" title="Egypt Mines Map" style="width:100%;border:none;display:block;height:calc(100vh - 130px)"></iframe>
 </div>
 
-<div class="foot" style="background:var(--tb-bg);border-top:1px solid var(--card-border);color:var(--txt2)">All amounts are in EGP &nbsp;|&nbsp; Data: April–May 2026 &nbsp;|&nbsp; AIT Projects Portfolio Dashboard &nbsp;|&nbsp; <span id="lastUpdate"></span></div>
+<div class="foot" style="background:var(--tb-bg);border-top:1px solid var(--card-border);color:var(--txt2)"> nbsp;|&nbsp; &nbsp;|&nbsp; AIT Projects Portfolio Dashboard &nbsp;|&nbsp; <span id="lastUpdate"></span></div>
 </div>
 
 <script>
@@ -1657,7 +1657,7 @@ async function loadFromSheets() {
     renderPage(document.querySelector('.pg.active').id.replace('pg-', ''));
   } catch (e) {
     console.error('Apps Script fetch error:', e);
-    document.getElementById('lastUpdate').textContent = 'Data: April–May 2026 (offline — using sample data)';
+    document.getElementById('lastUpdate').textContent = '(offline — using sample data)';
   }
 }
 
